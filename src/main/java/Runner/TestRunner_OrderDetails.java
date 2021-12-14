@@ -1,0 +1,17 @@
+package Runner;
+
+import cucumber.api.CucumberOptions;
+import cucumber.api.junit.Cucumber;
+import org.junit.runner.RunWith;
+
+    @RunWith(Cucumber.class)
+    @CucumberOptions(
+            features = "/Users/yogeshdhekale/IdeaProjects/CucumberDemoFramework/" +
+                    "CucumberBDDFramework/src/main/java/Features/Orders.feature",
+            glue = {"StepDefinations","HooksPackage"},
+            format = {"pretty","html:test-output", "junit:junit_xml/Cucumber.xml"},
+            dryRun = false,
+            monochrome = true
+    )
+    public class TestRunner_OrderDetails {
+    }

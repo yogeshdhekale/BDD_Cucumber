@@ -23,13 +23,13 @@ public class LoginStepDefination {
     public void title_of_webpage_is_E_banking()  {
         String titel = driver.getTitle();
         System.out.println(titel);
-        Assert.assertEquals("Free CRM  - CRM software for customer relationship management, sales, and support.", titel);
+        Assert.assertEquals("Free CRM - CRM software for customer relationship management, sales, and support.", titel);
     }
 
-    @Then("^user enters username and password$")
-    public void user_enters_username_and_password() {
-        driver.findElement(By.name("username")).sendKeys("siliconyoga");
-        driver.findElement(By.name("password")).sendKeys("@Sept2021");
+    @Then("^user enters \"(.*)\" and \"(.*)\"$")
+    public void user_enters_username_and_password(String username, String password) {
+        driver.findElement(By.name("username")).sendKeys(username);
+        driver.findElement(By.name("password")).sendKeys(password);
     }
 
     @Then("^user clicks on login button$")

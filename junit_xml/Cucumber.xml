@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="0.073679">
+<testcase classname="Amezon order page" name="Check previous order details" time="0.071549">
+<system-out><![CDATA[Given user is registered on Amazon..........................................passed
+Given user is on Amazon login screen........................................passed
+When user enters username and password......................................passed
+And user navigates to Order details screen..................................passed
+When user clicks Orders tab.................................................passed
+Then user checks previous orders............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Amezon order page" name="Check open order details" time="0.001116">
+<system-out><![CDATA[Given user is registered on Amazon..........................................passed
+Given user is on Amazon login screen........................................passed
+When user enters username and password......................................passed
+And user navigates to Order details screen..................................passed
+When user clicks Open Orders tab............................................passed
+Then user checks open orders................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Amezon order page" name="Check cancelled order details" time="0.001014">
+<system-out><![CDATA[Given user is registered on Amazon..........................................passed
+Given user is on Amazon login screen........................................passed
+When user enters username and password......................................passed
+And user navigates to Order details screen..................................passed
+When user clicks Cancelled Orders tab.......................................passed
+Then user checks cancelled orders...........................................passed
+]]></system-out>
+</testcase>
+</testsuite>
